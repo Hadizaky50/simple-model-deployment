@@ -4,7 +4,7 @@ import joblib
 from sklearn.metrics import accuracy_score
 
 # Load model and cleaned data
-svm = joblib.load('svm_linear_model.pkl')  # path to your saved model
+svm = joblib.load('svm_linear_model.joblib')  # path to your saved model
 cleaned_df = pd.read_csv('cleaned_data.csv')  # or .pkl, .joblib as needed
 
 st.title("SVM Classifier App")
