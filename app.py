@@ -18,7 +18,7 @@ st.subheader("Make a Prediction")
 
 # Automatically generate input widgets for each feature
 input_data = {}
-for col in cleaned_df.drop(columns=['Reccured']).columns:  # Replace 'target' with your label column
+for col in cleaned_df.drop(columns=['Recurred']).columns:  # Replace 'target' with your label column
     val = st.number_input(f"Enter value for {col}", value=float(cleaned_df[col].mean()))
     input_data[col] = val
 
